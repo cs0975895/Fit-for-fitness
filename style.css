@@ -1,0 +1,109 @@
+:root {
+--primary-color: #A19E78;
+--text-color: black;
+--secondary-color: #D0D0F6;
+}
+
+
+body {
+    background-color: var(--primary-color);
+}
+
+header {
+    background-color: var(--secondary-color);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+}
+
+.services-heading {
+    text-align: center;
+}
+
+.class-schedule, .sports-schedule {
+    text-align: center;
+}
+
+.table-responsive {
+    text-align: center;
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.services-grid {
+    background-color: var(--secondary-color);
+}
+
+.services-grid h2, .services-grid p {
+    background-color: white;
+}
+
+.table-break {
+    margin: 10%;
+}
+
+@media (min-width: 768px) {
+
+    .dropdown {
+        display: flex;
+        justify-content: center;
+        background-color: var(--secondary-color);
+    }
+
+    .dropbtn {
+        display: none;
+    }
+
+    .dropdown-content,
+    .dropdown:hover .dropdown-content {
+        display: flex;
+        position: static;
+        min-width: 0;
+        justify-content: center;
+        background-color: transparent;
+        box-shadow: none;
+    }
+}
